@@ -1,11 +1,2 @@
 #MainMenu {visibility: hidden;}
 header {visibility: hidden;}
-
-body {
-    background-color: #036f3e;
-}
-
-.fullScreenFrame > div {
-    display: flex;
-    justify-content: center;
-}
