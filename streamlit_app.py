@@ -19,7 +19,7 @@ def load_lottie_animation(file_path):
 
 # Function to apply snowfall effect
 def run_snow_animation():
-    rain(emoji="❄️", font_size=20, falling_speed=5, animation_length="infinite")
+    rain(emoji="❄️", font_size=10, falling_speed=5, animation_length="infinite")
 
 
 st.set_page_config(page_title = "Happy Holidays", page_icon="🎄")
