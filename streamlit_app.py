@@ -21,11 +21,8 @@ def load_lottie_animation(file_path):
 def run_snow_animation():
     rain(emoji="❄️", font_size=20, falling_speed=5, animation_length="infinite")
 
-col1, col2, col3 = st.columns(3)
 
-with col2:
-# Page configuration
-    st.set_page_config(page_title = "Happy Holidays", page_icon="🎄")
+st.set_page_config(page_title = "Happy Holidays", page_icon="🎄")
 
 # Run snowfall animation
 run_snow_animation()
@@ -34,14 +31,17 @@ run_snow_animation()
 with open(CSS_FILE) as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-# Display header with personalized name
-st.header(f"Merry Christmas and Happy New Year! 🎄", anchor=False)
+col1, col2, col3 = st.columns(3)
 
-# Display the Lottie animation
-lottie_animation = load_lottie_animation(LOTTIE_ANIMATION)
-st_lottie(lottie_animation, key="lottie-holiday", height=300)
+with col2:
+    # Display header with personalized name
+    st.header(f"Merry Christmas and Happy New Year! 🎄", anchor=False)
 
-# Personalized holiday message
-st.markdown(
-    f"Wish you a wonderful holiday season filled with joy and peace. 🌟"
-)
+    # Display the Lottie animation
+    lottie_animation = load_lottie_animation(LOTTIE_ANIMATION)
+    st_lottie(lottie_animation, key="lottie-holiday", height=300)
+
+    # Personalized holiday message
+    st.markdown(
+        f"Wish you a wonderful holiday season filled with joy and peace. 🌟"
+    )
