@@ -40,5 +40,5 @@ st_lottie(lottie_animation, key="lottie-holiday", height=300)
 
 # Personalized holiday message
 st.markdown(
-    f"Remember, Santa is watching. Everything. Yes, even that. Anyway, Merry Christmas and a Happy New Year! 🌟"
+    f"Remember, Santa is watching. Everything. Yes, even that. Anyway, Merry Christmas & Happy New Year! 🌟"
 )
