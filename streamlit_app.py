@@ -21,9 +21,11 @@ def load_lottie_animation(file_path):
 def run_snow_animation():
     rain(emoji="❄️", font_size=20, falling_speed=5, animation_length="infinite")
 
+col1, col2, col3 = st.columns(3)
 
+with col2:
 # Page configuration
-st.set_page_config(page_title = "Happy Holidays", page_icon="🎄")
+    st.set_page_config(page_title = "Happy Holidays", page_icon="🎄")
 
 # Run snowfall animation
 run_snow_animation()
