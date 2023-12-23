@@ -36,7 +36,7 @@ st.header(f"Merry Christmas and Happy New Year! 🎄", anchor=False)
 
 # Display the Lottie animation
 lottie_animation = load_lottie_animation(LOTTIE_ANIMATION)
-st_lottie(lottie_animation, key="lottie-holiday", height=600)
+st_lottie(lottie_animation, key="lottie-holiday", height=400)
 
 # Personalized holiday message
 st.markdown(
