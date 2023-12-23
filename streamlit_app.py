@@ -22,9 +22,6 @@ def run_snow_animation():
     rain(emoji="❄️", font_size=20, falling_speed=5, animation_length="infinite")
 
 
-with st.sidebar:
-    PERSON_NAME = st.text_input("Please enter your name: ")
-
 # Page configuration
 st.set_page_config(page_title = "Happy Holidays", page_icon="🎄")
 
@@ -36,7 +33,7 @@ with open(CSS_FILE) as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # Display header with personalized name
-st.header(f"Merry Christmas and Happy New Year, {PERSON_NAME}! 🎄", anchor=False)
+st.header(f"Merry Christmas and Happy New Year! 🎄", anchor=False)
 
 # Display the Lottie animation
 lottie_animation = load_lottie_animation(LOTTIE_ANIMATION)
@@ -44,5 +41,5 @@ st_lottie(lottie_animation, key="lottie-holiday", height=300)
 
 # Personalized holiday message
 st.markdown(
-    f"Hey {PERSON_NAME}! Wish you a wonderful holiday season filled with joy and peace. 🌟"
+    f"Wish you a wonderful holiday season filled with joy and peace. 🌟"
 )
