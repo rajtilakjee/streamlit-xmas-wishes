@@ -32,11 +32,11 @@ with open(CSS_FILE) as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # Display header with personalized name
-st.header(f"Merry Christmas and Happy New Year! 🎄", anchor=False)
+st.header(f"Wish you a very Merry Christmas and a Happy New Year! 🎄", anchor=False)
 
 # Display the Lottie animation
 lottie_animation = load_lottie_animation(LOTTIE_ANIMATION)
-st_lottie(lottie_animation, key="lottie-holiday", height=400)
+st_lottie(lottie_animation, key="lottie-holiday", height=300)
 
 # Personalized holiday message
 st.markdown(
